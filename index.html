@@ -3,7 +3,7 @@
     <head>
         <style>
             .button {
-            background-color: #4CAF50;
+            background-color: blue;
             border: none;
             color: white;
             padding: 15px 25px;
@@ -12,29 +12,76 @@
             cursor: pointer
             }
             .button:hover{
-                background-color: green;
+                background-color:darkblue;
+            }
+            li {
+                color:aqua;
+                font-family:sans-serif;
+                font-style: oblique;
+                text-align: left;
+            }
+            body {
+                background-image: url('images/img_background.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1 {
+                font-family: fantasy;
+                text-shadow: 2px 2px gray;
+                text-align: center;
+            }
+            p {
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                text-shadow: 1px 1px black;
+                text-align: center;
+            }
+            h2 {
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+                text-shadow:1px 1px grey;
+            }
+            h3 {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color:lightgoldenrodyellow;
+                font-size:larger;
+                text-align: left;
+            }
+
+            section {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .slanted {
+                font-size: 60px;
+                text-transform: uppercase;
+                transform: rotate(-5deg)
+                            skew(-5deg);
+                background-color: #ffc;
             }
         </style>
+
         <title>
             HTML testing
         </title>
     </head>
 
-    <body style="background-color:white;">
-        <h1>
-            Hello World
+    <body>
+        <h1 style="color:lightskyblue;font-size:100px;">
+            Hello 90s
         </h1>
-        <p>
+        <p style="color:rebeccapurple">
             Press link below to get good.
         </p>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link to get good</a>
-    </body>
-    <body>
-        <h2>
+
+        <h2 style="color:yellow">
             This is great text, you should read it.
         </h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis magna vitae nulla condimentum, et pharetra mi vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at tortor eleifend, pulvinar justo at, viverra risus. Vivamus commodo augue quis libero feugiat, sed tristique enim aliquam. Praesent a nulla turpis. Curabitur faucibus gravida ligula at imperdiet. Suspendisse molestie ornare sem, sit amet venenatis lectus gravida vitae. Cras nulla mi, rutrum gravida convallis vel, aliquam sit amet ex. Sed scelerisque lectus sed venenatis malesuada. Morbi pellentesque mauris congue lorem aliquet, eget consequat quam pretium. Sed dignissim porttitor velit, ut dapibus sapien varius faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        <p style="color: cornflowerblue;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, tempora? Repudiandae facere numquam quos delectus maxime. Autem est fugit cumque hic aperiam quos, iure molestiae beatae in. Accusantium ullam ex ipsam vel unde eum pariatur adipisci iste quae aliquam eligendi quo, rem animi eveniet, quam consequuntur cum illum delectus, atque nulla dolorum laudantium incidunt? Impedit ut, et quaerat facere, est itaque vero earum natus, laboriosam eius repellat. Beatae maxime atque ab rerum sed enim placeat ad blanditiis vitae mollitia delectus eum deserunt reiciendis libero debitis dicta autem ipsa, voluptate corporis tenetur quod? Suscipit porro autem, obcaecati molestiae atque amet modi.
         </p>
         <h3>List of great things</h3>
             <ul>
@@ -43,12 +90,13 @@
                 <li>Kool-Aid</li>
             </ul>
         <h3>My button. Do not press it!</h3>
+        
         <form>
             <button formaction="https://downloadmoreram.com/" class="button">Don't do it!</button>
         </form>
         <h3>Another button</h3>
         <form>
-            <button formaction="https://theuselessweb.com/" class="button">Press this one!</button>
+            <button formaction="https://theuselessweb.com/" class="button">Press this one instead!</button>
         </form>
         <h3>List of the 5 commandments:</h3>
             <ol>
@@ -58,6 +106,11 @@
                 <li>To be or not to be...</li>
                 <li>Drink Coffee everyday</li>
             </ol>
+            <section>
+                <span 
+                class="slanted">Police Line - Do Not Cross
+                </span>
+            </section>
     </body>
 </html>
 
