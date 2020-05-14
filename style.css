@@ -1,0 +1,86 @@
+button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer
+}
+
+button:hover{
+    background-color:darkblue;
+}
+
+li {
+    color:aqua;
+    font-family:sans-serif;
+    font-style: oblique;
+    text-align: left;
+}
+
+body {
+    background-image: url('images/img_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: fantasy;
+    text-shadow: 2px 2px gray;
+    text-align: center;
+}
+
+p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-shadow:1px 1px grey;
+}
+
+h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:lightgoldenrodyellow;
+    font-size:larger;
+    text-align: left;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.slanted {
+    font-size: 60px;
+    text-transform: uppercase;
+    transform: rotate(-5deg)
+                skew(-5deg);
+    background-color: yellow
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rotating {
+    animation: rotating 8s linear infinite;
+}
