@@ -78,9 +78,18 @@ section {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(359deg);
     }
 }
 .rotating {
     animation: rotating 8s linear infinite;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 20%;
 }
